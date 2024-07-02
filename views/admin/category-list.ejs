@@ -40,9 +40,15 @@
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th style="width: 50px;">id</th>
-                            <th>Category Name</th>
-                            <th style="width: 130px;"></th>
+                            <th style="width: 50px;">
+                                id
+                            </th>
+                            <th>
+                                Kategori Adı
+                            </th>
+                            <th style="width: 130px;">
+
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,16 +57,25 @@
                         <!--Istenilen Data lari Listeliyoruz-->
                         <% categories.forEach(category => { %>
                             <tr>
-                                <td>#<%= category.category_id %> </td>
+                                <td>
+                                    #<%= category.category_id %>
+                                </td>
                                 <td>
                                     <%= category.category_name %> 
                                 </td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="/admin/categories/<%= category.category_id %>">Edit</a>
-                                    <a class="btn btn-sm btn-danger" href="/admin/category/delete/<%= category.category_id %>">Delete</a>
+                                    <a class="btn btn-sm btn-primary" 
+                                        href="/admin/categories/<%= category.category_id %>">
+                                        Güncelle
+                                    </a>
+                                    <a class="btn btn-sm btn-danger" 
+                                        href="/admin/category/delete/<%= category.category_id %>">
+                                        Sil
+                                    </a>
                                 </td>
                             </tr>
                         <% }) %>
+                        
                     </tbody>
                 </table>
             </div>

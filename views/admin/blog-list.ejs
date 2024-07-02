@@ -40,10 +40,18 @@
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th style="width: 50px;">id</th>
-                            <th style="width: 150px;">Course Photo</th>
-                            <th>Course Name</th>
-                            <th style="width: 130px;"></th>
+                            <th style="width: 50px;">
+                                id
+                            </th>
+                            <th style="width: 150px;">
+                                Kurs Fotoğrafı
+                            </th>
+                            <th>
+                                Kurs Adı
+                            </th>
+                            <th style="width: 130px;">
+
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -60,11 +68,18 @@
                                     <%= blog.title %> 
                                 </td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="/admin/blogs/<%= blog.blog_id %>">Edit</a>
-                                    <a class="btn btn-sm btn-danger" href="/admin/blog/delete/<%= blog.blog_id %>">Delete</a>
+                                    <a class="btn btn-sm btn-primary" 
+                                        href="/admin/blogs/<%= blog.blog_id %>">
+                                        Güncelle
+                                    </a>
+                                    <a class="btn btn-sm btn-danger" 
+                                        href="/admin/blog/delete/<%= blog.blog_id %>">
+                                        Sil
+                                    </a>
                                 </td>
                             </tr>
                         <% }) %>
+                        
                     </tbody>
                 </table>
             </div>
